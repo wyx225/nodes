@@ -1,0 +1,54 @@
+# 订阅文件 - 设备 手机A（phone1）
+# 只放节点，客户端配置不放这里
+proxies:
+  - name: 香港-Hysteria2
+    type: hysteria2
+    server: 47.76.52.20
+    port: 8443
+    password: "phone1:HKph2026x2"
+    sni: www.bing.com
+    skip-cert-verify: true
+    up: '100 Mbps'
+    down: '150 Mbps'
+
+  - name: 香港-Reality
+    type: vless
+    server: 47.76.52.20
+    port: 443
+    uuid: 9e2088ce-6660-47b5-adee-9e2c059ba613
+    network: tcp
+    tls: true
+    udp: true
+    flow: xtls-rprx-vision
+    servername: www.bing.com
+    client-fingerprint: chrome
+    skip-cert-verify: false
+    reality-opts:
+      public-key: 168XHqa8oV1xvgxaFEHe1gsmXZTbk4eI7dn6WZe8Dl8
+      short-id: 2e14ed74
+
+  - name: 东京-Hysteria2
+    type: hysteria2
+    server: 167.179.70.250
+    port: 8443
+    password: "phone1:TKph2026y2"
+    sni: www.bing.com
+    skip-cert-verify: true
+    up: '100 Mbps'
+    down: '150 Mbps'
+
+  - name: 东京-Reality
+    type: vless
+    server: 167.179.70.250
+    port: 443
+    uuid: 8c02899d-dd0e-4c1c-a996-0212a2e4e94b
+    network: tcp
+    tls: true
+    udp: true
+    flow: xtls-rprx-vision
+    servername: www.bing.com
+    client-fingerprint: chrome
+    skip-cert-verify: false
+    reality-opts:
+      public-key: IToKT7TKjgKoeQukg2LsPWc3oX2ctspcv4eLRbhuYVA
+      short-id: a40b5538
