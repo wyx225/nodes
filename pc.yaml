@@ -52,3 +52,12 @@ proxies:
     reality-opts:
       public-key: IToKT7TKjgKoeQukg2LsPWc3oX2ctspcv4eLRbhuYVA
       short-id: a40b5538
+  - name: 法兰克福-Hysteria2
+    type: hysteria2
+    server: 80.240.30.63
+    port: 8443
+    password: "pc:FRApc2026z1"
+    sni: www.bing.com
+    skip-cert-verify: true
+    up: '100 Mbps'
+    down: '150 Mbps'
